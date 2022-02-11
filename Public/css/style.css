@@ -1,0 +1,863 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color_text: #404040;
+  --color_header: #b80000;
+  --color_Api_result: #1380a1;
+  --colo_grey_body: #e1e1e1;
+}
+body {
+  min-height: 100vh;
+  background-color: #fdfbfbfa;
+}
+.row-btn_navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.case1_row_btnNavbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link_login_btn {
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-right: 10px;
+  color: #1380a1 !important;
+  font-weight: 800;
+}
+.link_login_btn:hover {
+  text-decoration: none;
+  color: #cf5300!important;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.link_menu {
+  display: inline-block;
+}
+.link_menu a {
+  font-size: 17px;
+  color: #1380a1;
+  font-weight: bold;
+}
+.link_menu a:hover {
+  font-size: 18px;
+  color: var(--color_header);
+  font-weight: bold;
+}
+.div_menu {
+  display: none;
+}
+.form_header {
+  position: absolute;
+  z-index: 100000;
+  top: 74%;
+  left: 50%;
+  transform: translate(-53%, -50%);
+}
+.container_input_form {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 453px;
+}
+.icon_form_header {
+  font-size: 29px;
+}
+.container_icon_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.input_header {
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 8px 20px 8px 30px;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  outline: none;
+  border: none;
+}
+.new_navbar {
+  color: var(--color_header);
+  font-size: 22px;
+  margin-right: 50px;
+}
+.active {
+  display: block;
+  transition: all 0.2s ease-in;
+}
+.container_header_for_input {
+  position: relative;
+}
+.container_icon_navbar span:nth-child(1) {
+  font-size: 26px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+}
+.container_icon_navbar {
+  display: flex;
+  align-items: center;
+}
+.text_menu_hidden_nav {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.container_list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.logo_icon_navbar {
+  height: 90px;
+}
+.btn_menu_head {
+  padding: 3px 14px;
+  display: flex;
+}
+.btn_menu_head:hover {
+  background-color: var(--color_header);
+  color: white;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/* 
+.slick-slider {
+  height: 300px;
+} */
+.slick-arrow {
+  position: absolute;
+  transform: translate(-50%, -17px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.slick-arrow:hover {
+  background-color: brown;
+}
+.slick-prev {
+  top: 90px;
+  top: 50%;
+  background: black;
+  left: 29px;
+  z-index: 2000;
+}
+.slick-next {
+  top: 50%;
+  right: 17px;
+  background-color: black;
+  transform: translate(-50%, -17px);
+}
+.general_property {
+  height: 300px;
+  margin-bottom: 30px;
+}
+.img2_corona {
+  width: 100%;
+  height: 100%;
+  object-position: top;
+}
+
+.div_img7 {
+  background-image: url("../image/covid6.jpg");
+  background-position: center;
+}
+*/ .img_btn {
+  height: 43px;
+}
+/* .slick-arrow{
+    display: ; */
+
+.btn-size {
+  height: 20px;
+  border: none;
+}
+.bg_corona_virus {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.title_page {
+  font-size: 43px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color_text);
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 30px;
+  word-spacing: 7px;
+  padding-left: 90px;
+  padding-right: 5px;
+}
+
+.head_generale_textCenter {
+  margin-top: 50px;
+  text-transform: capitalize;
+  font-weight: bold;
+
+  font-size: 17px;
+  color: var(--color_text);
+  text-align: center;
+  position: relative;
+}
+.link_btn_header_search {
+  color: var(--color_Api_result);
+}
+.text_menu {
+  margin-right: 4px;
+}
+/* .fa {
+  position: absolute;
+  top: 25px;
+  font-size: 22px;
+  right: 9px;
+} */
+.head_generale_textCenter a {
+  text-decoration: none;
+}
+.head_generale_textCenter a::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: var(--color_header);
+  display: inline-block;
+}
+.cas_generale {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.bloc_number_positives_cases {
+  padding-top: 60px;
+}
+.img_content1 {
+  height: 30px;
+}
+.section_content1 {
+  width: 200px;
+  margin: 0 auto;
+}
+.icon {
+  text-align: center;
+}
+.content-number_api {
+  margin-top: 50px;
+}
+.text_number {
+  background-color: #1380a1;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+}
+.text_cas {
+  text-align: center;
+  color: #404040;
+  font-weight: bold;
+}
+.text_center_case_positive {
+  color: #404040;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.row_search_category {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.container_image {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.table {
+  margin-top: 23px;
+}
+.title_pays {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.row_info_Api div {
+  padding: 9px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.table_info {
+  padding: 13px;
+  overflow: auto;
+  height: 235px;
+}
+
+.text_indication {
+  padding-top: 70px;
+  font-size: 17px;
+  color: #5e5b5b;
+  font-weight: bold;
+  text-align: center;
+}
+.section2_let {
+  background-color: #efefef;
+}
+.section2 {
+  margin-bottom: 40px;
+  min-height: 300px;
+}
+.container_row1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid #efefef;
+}
+.container_row_api1 {
+  overflow-y: auto;
+}
+.infecteDeath {
+  width: 185px;
+  display: flex;
+  justify-content: space-between;
+}
+.api_country {
+  padding-top: 9px;
+}
+.delete_result {
+  display: none;
+}
+.card_img {
+  height: 100%;
+  width: 100%;
+  filter: cover;
+}
+.infecteDeath,
+.api_country {
+  color: #5e5b5b;
+  font-weight: bold;
+  display: inline-block;
+}
+.span1_sourceinfo {
+  color: #5e5b5b;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+.source_info span:nth-child(2) {
+  font-size: 22px;
+  color: var(--color_text);
+  font-weight: bold;
+}
+.source_info {
+  text-align: center;
+}
+
+.container_btn {
+  text-align: center;
+}
+.btn {
+  padding: 2px 20px;
+  border-radius: 7px;
+  color: white;
+}
+.btn_icon1 {
+  height: 20px;
+}
+.btn1 {
+  background-color: #25d366;
+}
+.btn2 {
+  background-color: #3c5a98;
+}
+.btn3 {
+  background-color: #47c7fa;
+}
+.btn4 {
+  background-color: #615f5d;
+}
+.container_btn {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.title_button {
+  margin-bottom: 40px;
+}
+.formulaire {
+  width: 450px;
+}
+.input_form {
+  margin-top: 16px;
+  width: 100%;
+  border: 2px solid white;
+  box-shadow: 3px 2px 3px black;
+  border-radius: 7px;
+  outline: none;
+  padding: 5px 5px 5px 14px;
+  font-size: 19px;
+  font-weight: 400;
+  color: var(--color_text);
+}
+.connection {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+}
+.icon_connection {
+  height: 30px;
+}
+.text_connexion {
+  color: blanchedalmond;
+  text-decoration-color: blanchedalmond;
+}
+
+.p_footer {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+.section5 {
+  min-height: 200px;
+  margin-bottom: 50px;
+}
+.container_list_social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img_card_section5 {
+  width: 100%;
+}
+.row_b {
+  margin-bottom: 40px;
+  margin-top: 17px;
+}
+
+.footer_section {
+  background-color: #4c4c4c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p_footer {
+  color: white;
+}
+.bg_header {
+  position: relative;
+}
+.header_content {
+  position: fixed;
+  z-index: 5000;
+  bottom: -45px;
+  left: 50%;
+  transform: translate(-50%, -28px);
+}
+.btn_social {
+  margin-right: 6px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-right: 7px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.btn_social:hover {
+  color: white;
+  text-decoration: none;
+}
+.bloc_image {
+  margin-bottom: 24px;
+}
+.bloc_image p a {
+  text-decoration: none;
+  color: var(--color_text);
+  font-size: 16px;
+  font-weight: bold;
+}
+.bloc_image p a:hover {
+  color: var(--color_Api_result);
+}
+
+.result_p {
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  padding-left: 14px;
+  padding-top: 6px;
+}
+.result_p span:first-child {
+  margin-right: 20px;
+}
+.row_resultat {
+  width: 40%;
+  background-color: #f7d8cd;
+  border-radius: 5px;
+}
+.row_resultat_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.title_footer {
+  font-size: 22px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 49px;
+}
+.container_text_footer {
+  margin: 0 auto;
+  width: 89%;
+  padding-top: 20px;
+}
+.row_link_footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--colo_grey_body);
+}
+.item_link_footer {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+.link_footer_border {
+  border-left: 1px solid var(--colo_grey_body);
+  padding-left: 13px;
+}
+.item_link_footer:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  display: inline-block;
+  padding-left: 14px;
+}
+.link_footer_page {
+  flex: 1;
+}
+.container_liste_footer {
+  padding-top: 23px;
+  line-height: 2em;
+  text-align: left;
+  font-size: 14px;
+}
+.text_copyright {
+  color: white;
+  font-size: 17px;
+}
+
+.container_liste_footer li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 22px;
+}
+.container_liste_footer li a {
+  color: white;
+  text-decoration: none;
+}
+
+.verticale_bar_section_prevention {
+  position: absolute;
+  left: 50%;
+  height: 88%;
+  transform: translateX(-50%);
+  width: 3px;
+  background-color: red;
+  z-index: 100;
+}
+.container_section_prevention {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  min-height: 400px;
+}
+.card_row_prevention {
+  width: 50%;
+  padding: 25px;
+  color: white;
+  font-size: 16px;
+  min-height: 170px;
+}
+
+.card_row_prevention p {
+  font-size: 23px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.row_prevention {
+  display: block;
+  min-height: 170px;
+}
+.title_prevention {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.card1_row1_prevention {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  float: left;
+}
+.card2_row2_prevention {
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  float: right;
+}
+.bg_prevention1 {
+  background-color: #25d366;
+  text-align: right;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../image/perte-gout-symptome.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg_prevention2 {
+  background-color: #3c5a98;
+  text-align: left;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../image/téléchargement.jfif);
+  background-size: cover;
+  background-position: center;
+}
+.bg_prevention3 {
+  background-color: #47c7fa;
+  text-align: right;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../image/photo-1589209934789-4aacd30e8e3d.jfif);
+  background-size: cover;
+  background-position: center;
+}
+.bg_prevention4 {
+  background-color: #615f5d;
+  text-align: left;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../image/fievre.jfif);
+  background-size: cover;
+  background-position: center;
+}
+.user_menbers{
+  font-size: 26px;
+}
+.link_menbre-setting{
+  text-decoration: none;
+  color: black;
+  display: block;
+  position: relative;
+}
+.hover_text_profile {
+  position: absolute;
+  background-color: brown;
+  z-index: 2000;
+  right: 0;
+  width: 110px;
+  padding: 9px;
+  border-radius: 7px;
+  display: none;
+}
+.fa-edit ,.fa-gear{
+  color: white;
+}
+.hover_text_profile li i{
+  color: white;
+}
+.text_user_menber_setting{
+  color: white!important;
+}
+.active_text_user{
+  display: block;
+}
+.hover_text_profile li{
+  list-style-type:none ;
+}
+.hover_text_profile li a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* --media query --- */
+@media screen and (max-width: 768px) {
+  .card_row_prevention p {
+    font-size: 19px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .row_prevention {
+    display: block;
+    min-height: 179px;
+  }
+  .row_link_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: none !important;
+  }
+  .title_footer {
+    font-size: 22px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 26px;
+  }
+  .text_center_case_positive {
+    color: #404040;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+  .container,
+  .container-sm {
+    max-width: 652px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .title_page {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color_text);
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 30px;
+    word-spacing: 7px;
+    padding-left: 50px;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .case1_row_btnNavbar {
+    display: flex;
+  }
+  .btn_menu_head {
+    padding: 3px 14px;
+    display: flex;
+  }
+  .login_row_btn {
+    margin-top: 14px;
+  }
+  .row-btn_navbar {
+    padding: 20px;
+    display: block;
+    justify-content: none;
+    align-items: none;
+  }
+  .container_input_form {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 346px;
+  }
+  .new_navbar {
+    color: var(--color_header);
+    font-size: 22px;
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 492px) {
+  .card_row_prevention {
+    width: 100%;
+    padding: 25px;
+    color: white;
+    font-size: 16px;
+    min-height: 170px;
+  }
+  .verticale_bar_section_prevention {
+    position: absolute;
+    left: 50%;
+    height: 88%;
+    transform: translateX(-50%);
+    width: 3px;
+    background-color: red;
+    z-index: 100;
+    display: none;
+  }
+  .card_row_prevention {
+    width: 100%;
+    padding: 25px;
+    color: white;
+    font-size: 16px;
+    min-height: 170px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+  }
+}
+@media screen and (max-width: 405px) {
+  .container_list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    flex-direction: column;
+    padding-left: 14px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .title_page {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color_text);
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 30px;
+    word-spacing: 7px;
+    padding-left: 21px;
+    padding-right: 5px;
+  }
+}
+@media screen and (max-width: 391px) {
+  .container_input_form {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 236px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .case1_row_btnNavbar {
+    display: block;
+  }
+  .btn_menu_head {
+    padding: 3px 14px;
+    display: flex;
+    margin-top: 11px;
+  }
+}
+@media screen and (max-width: 285px) {
+  .container_input_form {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 151px;
+  }
+  .section_content1 {
+    width: none;
+    margin: 0 auto;
+  }
+  .card_row_prevention p {
+    font-size: 12px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .title_prevention {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+.title_pays {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+}
