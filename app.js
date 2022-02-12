@@ -14,6 +14,11 @@ app.get('/', (req ,res)=>{
     
 })
 
+app.listen( PORT , ()=>{
+    console.log(`listening on port ${PORT}`)
+})
+
+
 // app.get('/movies', (req ,res)=>{
 //     res.send('bientot les films')
    
@@ -27,11 +32,3 @@ app.get('/', (req ,res)=>{
 
 
 
-
-app.get('/movies' , (req ,resp)=>{
-    res.send('Bientot des films ici meme')
-   
-})
-app.listen( PORT , ()=>{
-    console.log(`listening on port ${PORT}`)
-})
